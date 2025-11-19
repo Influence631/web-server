@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.28)
+
+PROJECT(
+server 
+VERSION 1.0 
+LANGUAGES CXX
+)
+
+#message(STATUS "CMAKE_CURRENT_SOURCE_DIR=${CMAKE_CURRENT_SOURCE_DIR}")
+#message(STATUS "CMAKE_CURRENT_BINARY_DIR=${CMAKE_CURRENT_BINARY_DIR}")
+#message(STATUS "PROJECT_SOURCE_DIR=${PROJECT_SOURCE_DIR}")
+#message(STATUS "CMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR}")
+
+add_executable(${PROJECT_NAME} src/main.cpp)
+
+target_include_directories(${PROJECT_NAME} PRIVATE headers)
